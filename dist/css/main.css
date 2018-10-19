@@ -1,0 +1,99 @@
+body {
+  font-size: 10px;
+}
+
+section {
+  margin: 0 auto;
+  padding: 16rem;
+}
+
+section:before {
+  content: '';
+  display: table;
+}
+
+section:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  width: calc(99.9% * 1 - (30px - 30px * 1));
+  max-width: calc(99.9% * 1 - (30px - 30px * 1));
+  height: calc(99.9% * 1 - (30px - 30px * 1));
+}
+
+div:nth-child(1n) {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  clear: none;
+}
+
+div:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+div:nth-child(NaNn) {
+  margin-right: 0;
+}
+
+div:nth-child(NaNn + 1) {
+  clear: both;
+}
+
+div:nth-last-child(-n + NaN) {
+  margin-bottom: 0;
+}
+
+h2 {
+  margin: 0 auto;
+  font-size: 2rem;
+  color: #365899;
+  font-family: Graphik LCG Web, Graphik Arabic Web Regular, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, Lucida Grande, Sans-Serif;
+}
+
+div a {
+  font-size: 2rem;
+  height: 2rem;
+  margin: 0.5rem 0;
+  font-weight: bold;
+  padding: 0 0.4rem;
+  color: #365899;
+}
+
+div button {
+  width: 24rem;
+  height: 3rem;
+  margin: 0.2rem auto;
+  color: #ffffff;
+  background-color: #4267b2;
+  border: 0.1rem solid #6c4c8c;
+  border-radius: 0.2rem;
+}
+
+.onlyMobile {
+  display: none;
+}
+
+.onlyDesktop {
+  display: none;
+}
+
+@media only screen and (max-width: 44em) {
+  .onlyMobile {
+    display: unset;
+  }
+}
+
+@media only screen and (min-width: 45em) {
+  .onlyDesktop {
+    display: unset;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,61 @@
+body {
+  font-size: 10px;
+}
+
+section {
+  lost-utility: clearfix;
+  margin: 0 auto;
+  padding: 16rem;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  lost-waffle: 1;
+}
+
+h2 {
+  margin: 0 auto;
+  font-size: 2rem;
+  color: #365899;
+  font-family: Graphik LCG Web, Graphik Arabic Web Regular, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, Lucida Grande, Sans-Serif;
+}
+
+div a {
+  font-size: 2rem;
+  height: 2rem;
+  margin: 0.5rem 0;
+  font-weight: bold;
+  padding: 0 0.4rem;
+  color: #365899;
+}
+
+div button {
+  width: 24rem;
+  height: 3rem;
+  margin: 0.2rem auto;
+  color: #ffffff;
+  background-color: #4267b2;
+  border: 0.1rem solid #6c4c8c;
+  border-radius: 0.2rem;
+}
+
+.onlyMobile {
+  display: none;
+}
+
+.onlyDesktop {
+  display: none;
+}
+
+@media only screen and (max-width: 44em) {
+  .onlyMobile {
+    display: unset;
+  }
+}
+
+@media only screen and (min-width: 45em) {
+  .onlyDesktop {
+    display: unset;
+  }
+}
